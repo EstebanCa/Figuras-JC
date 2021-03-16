@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Patua+One&display=swap');
+body {
+    font-family: 'Patua One', cursive;
+}
+
+.container {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.container .row {
+    display: flex;
+    margin-top: 100px;
+}
+
+.container .row .cont-izq {
+    width: 50%;
+    background: #2396bd;
+    justify-content: center;
+    padding: 50px;
+    border: 1px solid #fbfbfb;
+    text-align: center;
+}
+
+.container .row .cont-izq h2 {
+    color: #fbfbfb;
+}
+
+.container .row .cont-izq .cont-botones button {
+    padding: 12px 30px;
+    margin: 20px 16px;
+    background: #fbfbfb;
+    color: #2396bd;
+    border: 1px solid #fbfbfb;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.container .row .cont-der {
+    width: 50%;
+    background: #fff;
+    padding: 50px;
+    border: 1px solid #2396bd;
+    text-align: center;
+}
+
+.container .row .cont-der h2 {
+    color: #2396bd;
+}
+
+.container .row .cont-der #figura {
+    width: 200px;
+    height: 200px;
+    margin: 100px auto;
+    transition: .4s;
+    background: url(../img/dia1.png);
+}
+
+
+/*Variantes de clases*/
+
+.container .row .cont-der #figura.circulo {
+    transition: .4s;
+    border-radius: 50%;
+    background: url(../img/dona1.png);
+}
+
+.container .row .cont-der #figura.rombo {
+    transform: rotate(-40deg);
+    border-radius: 0;
+    background: url(../img/rombo1.png);
+}
+
+.container .row .cont-der #figura.rectangulo {
+    width: 400px;
+    transform: rotate(0deg);
+    background: url(../img/mario1.png);
+}
+
+.container .row .cont-der #figura.top {
+    transform: translateY(-70px);
+}
+
+.container .row .cont-der #figura.right {
+    transform: translateX(70px);
+}
+
+.container .row .cont-der #figura.buttom {
+    transform: translateY(70px);
+}
+
+.container .row .cont-der #figura.left {
+    transform: translateX(-70px);
+}
+
+.container .row .cont-der #figura.dsd {
+    transform: translate(70px, -70px);
+}
+
+.container .row .cont-der #figura.diz {
+    transform: translate(-70px, 70px);
+}
